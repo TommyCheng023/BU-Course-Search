@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BU Courses Search</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>BU Course Search Engine</h1>
+        <h3>Dummy Version - Display All CS Courses</h3>
+        <ul>
+            {% for course in courses %}
+            <li>{{ course[0] }} - {{ course[1] }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
