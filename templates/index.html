@@ -6,11 +6,26 @@
     </head>
     <body>
         <h1>BU Course Search Engine</h1>
-        <h3>Dummy Version - Display All CS Courses</h3>
-        <ul>
-            {% for course in courses %}
-            <li>{{ course[0] }} - {{ course[1] }}</li>
-            {% endfor %}
-        </ul>
+        <!--
+            <h3>Dummy Version - Display All CS Courses</h3>
+            <ul>
+                {% for course in courses %}
+                <li>{{ course[0] }} - {{ course[1] }}</li>
+                {% endfor %}
+            </ul>
+        -->
+        <h3>Version 1.0 - You can search for BU courses by entering the course code into the following searchbar.</h3>
+        <form name="searchbar" action="/">
+            <input type="text" name="content" placeholder="example: CAS PH 150" value="{{ searchHistory }}" >
+            <input type="submit" value="Search Course">
+        </form>
+        {% if courses %}
+            <h4>We've found {{ number }} matching course for you.</h4>
+            <ul>
+                {% for course in courses %}
+                <li>{{ course[0] }} - {{ course[1] }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
     </body>
 </html>
