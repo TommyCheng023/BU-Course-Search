@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS courses_db (
     name VARCHAR(255),
     code VARCHAR(100) PRIMARY KEY,
     description TEXT,
-    credit INT,
+    credit FLOAT,
     prereq TEXT,
     hub TEXT
 );
