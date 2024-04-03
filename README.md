@@ -1,5 +1,5 @@
 # BU Courses Search Engine
-## Associated with [BUCSSA](bucssa.org)
+## Associated with [BUCSSA](https://www.bucssa.org/)
 
 ### Task One
 * Create a database by `MySQL`
